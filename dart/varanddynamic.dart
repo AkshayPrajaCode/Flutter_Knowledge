@@ -1,7 +1,10 @@
 void main() {
-  String isRahulFriends = "raman";
-
-  //var
-  var subject = "Math";
-  
+  myclass.printName();
 }
+
+class myclass {
+  static printName() {
+    print("object");
+  }
+}
+ 
