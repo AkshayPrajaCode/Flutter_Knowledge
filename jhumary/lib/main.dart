@@ -1,4 +1,8 @@
+// ignore_for_file: unused_import
+
 import 'package:flutter/material.dart';
+import 'dart:io';
+import 'dart:ui';
 
 void main() {
   runApp(const MyApp());
@@ -35,8 +39,10 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  // ignore: unused_field
   int _counter = 0;
 
+  // ignore: unused_element
   void _incrementCounter() {
     setState(() {
       
@@ -47,6 +53,14 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     
+    var center = Center(
+      child:Container(
+      width: 100,
+      height: 100,
+      color: Colors.amber,
+     
+     ),
+     );
     return Scaffold(
       appBar: AppBar(
         
@@ -54,14 +68,7 @@ class _MyHomePageState extends State<MyHomePage> {
         
         title: Text(widget.title),
       ),
-     body: Center(
-      child:Container(
-      width: 100,
-      height: 100,
-      color: Colors.amber,
-      child:Text("Hello Developer"),
-     ),
-     )
+     body: center
      
     );
   }
